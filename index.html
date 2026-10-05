@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus links ✦</title>
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+ 
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noite:   '#1a1028',
+            ameixa:  '#2d1b4e',
+            violeta: '#5b2a86',
+            roxo:    '#7e4bb8',
+            lilas:   '#c8a8e9',
+            nevoa:   '#efe4fa',
+          },
+          fontFamily: {
+            titulo: ['"Cinzel Decorative"', 'serif'],
+            texto:  ['"Cormorant Garamond"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen font-texto text-nevoa">
+
+
+  <div class="estrelas"></div>
+
+  <main class="relative mx-auto flex max-w-md flex-col items-center px-6 py-14">
+
+    
+    <div class="flutuar">
+      <div class="arco bg-gradient-to-b from-lilas to-violeta p-1 shadow-[0_0_40px_rgba(200,168,233,.35)]">
+        <img src="foto.jpg" alt="Minha foto" class="arco h-40 w-32 object-cover">
+      </div>
+    </div>
+
+    
+    <h1 class="titulo-brilho mt-6 text-center font-titulo text-3xl text-lilas">FulaninhA</h1>
+    <p class="mt-2 text-center text-lg italic text-nevoa/80">
+      
+    </p>
+
+   
+    <div class="my-6 tracking-[.6em] text-lilas/70">✦ ☾ ✦</div>
+
+   
+    <nav class="flex w-full flex-col gap-4">
+      <a href="https://instagram.com/seuuser" class="link-card">
+        <span>☾</span> Instagram <span>☾</span>
+      </a>
+      <a href="https://tiktok.com/@seuuser" class="link-card">
+        <span>✿</span> TikTok <span>✿</span>
+      </a>
+      <a href="https://seusite.com" class="link-card">
+        <span>✦</span> Meu blog <span>✦</span>
+      </a>
+    </nav>
+
+    
+    <footer class="mt-12 text-sm italic text-lilas/60">
+      ✿ meus links ✿
+    </footer>
+
+  </main>
+
+</body>
+</html>

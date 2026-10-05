@@ -1,0 +1,82 @@
+
+body {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(126, 75, 184, .35), transparent 45%),
+    radial-gradient(circle at 80% 90%, rgba(200, 168, 233, .18), transparent 50%),
+    #1a1028;
+  background-attachment: fixed;
+}
+
+
+.estrelas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px,      #efe4fa, transparent),
+    radial-gradient(1.5px 1.5px at 90px 120px, #c8a8e9, transparent),
+    radial-gradient(1px 1px at 160px 70px,     #ffffff, transparent),
+    radial-gradient(1px 1px at 130px 180px,    #c8a8e9, transparent);
+  background-size: 200px 200px;
+  animation: brilho 4s ease-in-out infinite alternate;
+}
+
+@keyframes brilho {
+  from { opacity: .3; }
+  to   { opacity: .85; }
+}
+
+
+.arco {
+  border-radius: 999px 999px 1rem 1rem;
+}
+
+
+.flutuar {
+  animation: flutuar 6s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+.titulo-brilho {
+  text-shadow: 0 0 12px rgba(200, 168, 233, .6);
+}
+
+
+.link-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  padding: .9rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #efe4fa;
+  text-decoration: none;
+  background: rgba(45, 27, 78, .6);
+  border: 1px solid rgba(200, 168, 233, .4);
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+  transition: all .3s ease;
+}
+
+.link-card span {
+  color: #c8a8e9;
+  opacity: .7;
+  transition: transform .3s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  background: rgba(91, 42, 134, .7);
+  border-color: #c8a8e9;
+  box-shadow: 0 0 25px rgba(200, 168, 233, .45);
+}
+
+.link-card:hover span {
+  transform: rotate(20deg) scale(1.3);
+  opacity: 1;
+}
